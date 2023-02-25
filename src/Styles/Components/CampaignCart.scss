@@ -1,0 +1,60 @@
+.campaign-carts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    padding-top: 30px;
+
+    .discount-cart {
+        background-color: rgb(246, 228, 231);
+        width: 300px;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 10px; 
+
+        img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        h4 {
+            color: rgb(97, 89, 89);
+            text-align: center;
+            padding-top: 50px;
+            font-weight: 700;
+            font-size: 25px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        button {
+            width: 250px;
+            height: 45px;
+            color: #fff;
+            background-color: #f28e00;
+            border-radius: 15px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+
+        }
+    }
+}
+@media only screen and (min-width:350px) and (max-width:576px){
+    .campaign-carts {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+    .campaign-carts {
+  flex-wrap: row wrap;
+
+
+    }
+}

@@ -1,0 +1,29 @@
+ .campaign {
+   padding-bottom: 50px;
+
+   .compaign-main {
+     h1 {
+       font-size: 30px;
+     }
+   }
+ }
+
+ @media only screen and (min-width:350px) and (max-width:576px) {
+   .campaign {
+     .compaign-main {
+       h1 {
+         font-size: 18px !important;
+       }
+     }
+   }
+ }
+
+ @media only screen and (min-width:576px) and (max-width:992px) {
+   .campaign {
+     .compaign-main {
+       h1 {
+         font-size: 18px !important;
+       }
+     }
+   }
+ }

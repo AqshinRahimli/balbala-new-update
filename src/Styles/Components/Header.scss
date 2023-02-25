@@ -1,0 +1,538 @@
+header {
+    background-color: rgb(20, 155, 20);
+    width: 100%;
+    height: 50px;
+
+
+    .line {
+        border-bottom: 2px solid rgb(234, 232, 232);
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        align-items: center;
+        height: 50px;
+
+        ul {
+            display: flex;
+        }
+
+    }
+
+    .header-mid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 200px;
+            margin-top: 15px;
+
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .acount-btn {
+            .dropdown-menu {
+                display: none;
+                background-color: #fff;
+                border: 1px solid rgb(234, 232, 232);
+                color: green;
+                top: 100%;
+                width: 250px;
+                padding: 15px 25px;
+                border-radius: 15px;
+                position: absolute;
+                font-size: 15px;
+
+                ul {
+
+                    li {
+                        margin-top: 15px;
+                        text-align: start;
+                        margin-left: 15px;
+
+                        &:hover {
+                            color: #f28e00;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-menu {
+                    display: block;
+
+
+                }
+            }
+        }
+    }
+
+    .search {
+        position: relative;
+        color: green;
+
+        input {
+            width: 550px;
+            height: 50px;
+            border-radius: 20px;
+            margin-top: 20px;
+            background-color: rgb(234, 232, 232);
+            padding: 10px;
+            display: flex;
+            text-align: center;
+            color: green;
+            font-size: 15px;
+
+            &::placeholder {
+                color: green;
+
+            }
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 38px;
+            left: 21px;
+
+        }
+
+    }
+
+    .header-down {
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+            ul {
+                display: flex;
+
+                li {
+                    margin: 30px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: green;
+
+                    &:hover {
+                        color: #f28e00;
+                        transition: 1;
+                        transform: 1.8;
+
+                    }
+                }
+            }
+        }
+
+        .catigoriesBtn {
+            position: relative;
+            display: inline-block;
+
+            &:hover {
+                color: #f28e00;
+                font-weight: 700;
+
+                .dnopdrown-menu-catigories {
+                    display: flex;
+
+                }
+            }
+
+            .dnopdrown-menu-catigories {
+                width: 450px;
+                height: 230px;
+                background-color: #fff;
+                color: green;
+                border-radius: 15px;
+                font-size: 20px;
+                position: absolute;
+                border: 1px solid rgb(234, 232, 232);
+                z-index: 38;
+                display: none;
+
+                ul {
+                    display: block;
+
+                    li {
+                        font-size: 15px;
+
+                        &:hover {
+                            color: #f28e00;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .discoverBtn {
+            position: relative;
+            display: inline-block;
+
+
+            &:hover {
+                color: #f28e00;
+                font-weight: 700;
+
+                .dnopdrown-menu-discover {
+                    display: block;
+                    display: flex;
+                }
+            }
+
+            .dnopdrown-menu-discover {
+                width: 450px;
+                height: 230px;
+                background-color: #fff;
+                border-radius: 15px;
+                font-size: 20px;
+                position: absolute;
+                display: none;
+                border: 1px solid rgb(234, 232, 232);
+                z-index: 1;
+
+                h5 {
+                    color: #212738;
+                    padding-top: 25px;
+                    margin-left: 30px;
+                }
+
+                ul {
+                    display: block;
+
+                    li {
+                        font-size: 15px;
+
+                        &:hover {
+                            color: #f28e00;
+                            transition: 1;
+                            transform: 1.8;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .giftbtn {
+            position: relative;
+            display: inline-block;
+
+            &:hover {
+                color: #f28e00;
+                font-weight: 700;
+
+                .dnopdrown-menu-gift {
+                    display: block;
+                    display: flex;
+                }
+            }
+
+            .dnopdrown-menu-gift {
+                width: 450px;
+                height: 230px;
+                background-color: #fff;
+                border-radius: 15px;
+                font-size: 20px;
+                position: absolute;
+                display: none;
+                border: 1px solid rgb(234, 232, 232);
+                z-index: 1;
+
+
+                h5 {
+                    color: #212738;
+                    padding-top: 25px;
+                    margin-left: 30px;
+                }
+
+                ul {
+                    display: block;
+
+                    li {
+                        font-size: 15px;
+
+                        &:hover {
+                            color: #f28e00;
+                            transition: 1;
+                            transform: 1.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:576px) {
+    header {
+        .header-top {
+
+            li.help {
+                display: none;
+            }
+        }
+
+        nav {
+            padding-top: 10px;
+
+            .header-mid {
+                display: block;
+
+                .logo {
+                    width: 120px;
+
+                }
+
+                .search {
+                    display: flex;
+                    justify-content: center;
+
+                    input {
+                        width: 350px;
+
+                    }
+
+                }
+
+                .registration {
+                    .acount-btn {
+                        display: none;
+                    }
+
+                    .liked-btn {
+                        position: absolute;
+                        top: 63px;
+                        right: 90px;
+                        width: 45px;
+                        height: 45px;
+
+                        .FiHeart-icon {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .basket-btn {
+                        position: absolute;
+                        top: 63px;
+                        right: 32px;
+                        width: 45px;
+                        height: 45px;
+
+                        .SlBasketLoaded-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        p {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+
+            .header-down {
+                nav {
+                    top: 10px;
+
+                    ul {
+                        margin-left: -45px;
+                        overflow: initial;
+
+                        li {
+                            margin: 20px;
+                            font-size: 14px;
+                        }
+
+                        .catigoriesBtn {
+                            position: none;
+
+                            .dnopdrown-menu-catigories {
+                                width: 300px;
+                                height: 230px;
+                                border-radius: 15px;
+                                font-size: 16px;
+                                z-index: 35;
+
+                                ul {
+                                    li {
+                                        margin-left: 60px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .discoverBtn {
+
+                            .dnopdrown-menu-discover {
+                                height: 240px;
+                                width: 300px;
+                                z-index: 36;
+                                font-size: 16px;
+                                margin-left: -100px;
+
+                                ul {
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+
+                        .giftbtn {
+                            .dnopdrown-menu-gift {
+                                z-index: 37;
+                                font-size: 16px;
+                                width: 320px;
+                                height: 240px;
+                                margin-left:-140px;
+
+                                ul {
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+    header {
+        .header-top {
+
+            li.help {
+                display: none;
+            }
+        }
+
+        nav {
+            .header-mid {
+                display: block;
+
+                .logo {
+                    width: 150px;
+
+                }
+
+                .search {
+                    display: flex;
+                    justify-content: center;
+
+                    .search-icon {
+                        margin-left: 50px;
+                    }
+                }
+
+                .registration {
+                    .acount-btn {
+                        display: none;
+                    }
+
+                    .liked-btn {
+                        position: absolute;
+                        top: 63px;
+                        right: 90px;
+                        width: 45px;
+                        height: 45px;
+
+                        .FiHeart-icon {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .basket-btn {
+                        position: absolute;
+                        top: 63px;
+                        right: 32px;
+                        width: 45px;
+                        height: 45px;
+
+                        .SlBasketLoaded-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        p {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+
+            .header-down {
+                nav {
+                    padding-top: 20px;
+
+                    ul {
+                        margin-left: -45px;
+                        overflow: initial;
+
+                        li {
+                            margin: 20px;
+                            font-size: 14px;
+                        }
+
+                        .catigoriesBtn {
+                            position: none;
+
+                            .dnopdrown-menu-catigories {
+                                width: 300px;
+                                height: 230px;
+                                border-radius: 15px;
+                                font-size: 18px;
+                                z-index: 35;
+
+                                ul {
+                                    li {
+                                        margin-left: 60px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .discoverBtn {
+
+                            .dnopdrown-menu-discover {
+                                height: 190px;
+                                width: 400px;
+                                z-index: 36;
+                                font-size: 16px;
+                                margin-left: -100px;
+
+                                ul {
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+
+                        .giftbtn {
+                            .dnopdrown-menu-gift {
+                                z-index: 37;
+                                font-size: 16px;
+                                width: 370px;
+                                height: 190px;
+                                margin-left: -60px;
+
+                                ul {
+                                    margin-left: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

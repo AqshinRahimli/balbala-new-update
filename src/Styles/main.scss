@@ -1,0 +1,20 @@
+// google-fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+// global scss
+@import "../Base/index.scss";
+// components scss
+@import "./Components/Header.scss";
+@import "./Components/Cart.scss";
+@import "./Components/CartToy.scss";
+@import "./Components/Title.scss";
+@import "./Components/CampaignCart.scss";
+@import "./Components/Resizable.scss";
+@import "./Components/ResizableBrand.scss";
+@import "./Components/Details.scss";
+@import "./Components/ResizableDetail.scss";
+@import "./Components/ResizableDetailsToys.scss";
+// pages scss
+@import "./Pages/Basket.scss";
+@import "./Pages/Campaign.scss";
+@import "./Pages/Home.scss";
+@import "./Pages/Membership.scss";

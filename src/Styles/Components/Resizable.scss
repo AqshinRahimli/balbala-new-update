@@ -1,0 +1,26 @@
+.slick-prev {
+  top: 50% !important;
+  left: 3px !important;
+  background-color: gray !important;
+  color: white !important;
+}
+
+.slick-next {
+  top: 50% !important;
+  right: 3px !important;
+  background-color: gray !important;
+  color: white !important;
+}
+
+.slick-arrow{
+  background-color: orange!important;
+  color: orange!important;
+  width: 30px!important;
+  height: 30px !important;;
+  border-radius: 50% !important;
+  z-index: 10!important;
+}
+ 
+@media only screen and (min-width:350px) and (max-width:576px){
+  
+}

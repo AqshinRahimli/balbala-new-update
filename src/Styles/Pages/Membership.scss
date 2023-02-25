@@ -1,0 +1,217 @@
+.login-pages {
+    background-color: rgb(247, 243, 225);
+    padding: 30px;
+    width: 100%;
+    min-height: 100vh;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 200px;
+        }
+    } 
+
+    .form-section {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+
+        .form {
+            width: 420px;
+            height: 650px;
+            border: 1px solid rgb(234, 232, 232);
+            border-radius: 20px;
+            flex-direction: column;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+                color: #f28e00;
+                padding: 30px;
+                text-align: center;
+            }
+
+            .registration {
+                width: 400px;
+                height: 200px;
+                border-radius: 20px;
+
+                .mobil {
+                    width: 150px;
+                    margin-left: 40px;
+                    padding-left: 5px;
+                    border-radius: 10px;             
+                }
+                }
+
+                .elektron {
+                    width: 150px;
+                    margin-left: 40px;
+                    padding-left: 5px;
+                    border-radius: 10px;
+                }
+            }
+
+            .button {
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
+
+                button {
+                    background-color: #f28e00;
+                    width: 300px;
+                    height: 50px;
+                    border-radius: 30px;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .line {
+
+                span {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: gray;
+
+                }
+            }
+
+            h5 {
+                font-size: 20px;
+                font-weight: 700;
+                color: #f28e00;
+                padding: 30px;
+
+            }
+
+            p {
+                font-size: 15px;
+                color: gray;
+                margin-right: 50px;
+                margin-left: 50px;
+
+            }
+
+            .social {
+
+                ul {
+                    display: flex;
+
+                    padding: 30px;
+
+                    li {
+                        width: 75px;
+                        height: 75px;
+                        border: 1 px solid #fff;
+                        border-radius: 50%;
+                        background-color: green;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 30px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+@media only screen and (min-width:350px) and (max-width:576px) {
+    .login-pages {
+        position: relative;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .form-section {
+            .form {
+                width: 350px;
+                height: 600px;
+
+                .line {
+                    padding-top: 15px;
+                }
+
+                h5 {
+                    padding: 20px;
+                }
+
+                .social {
+                    ul {
+                        li {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+
+                .registration {
+                    width: 340px;
+
+                    .elektron {
+                        width: 150px;
+                        height: 40px;
+                        margin-left: 30px;
+                        padding-left: 5px;
+                        // background-color: rgb(247, 243, 225);
+                        border-radius: 20px;
+                    }
+
+                    .mobil {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+
+    .login-pages {
+
+        width: 100%;
+        min-height: 100vh;
+
+        .form-section {
+            .form {
+                width: 400px;
+                height: 600px;
+
+                .line {
+                    padding-top: 15px;
+                }
+
+                h5 {
+                    padding: 20px;
+                }
+
+                .social {
+                    ul {
+                        li {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

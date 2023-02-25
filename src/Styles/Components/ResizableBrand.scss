@@ -1,0 +1,12 @@
+.images {
+    height: 180px;
+    background-color: #fff;
+    width: 180px !important;
+    margin-left: 90px !important;
+    display: flex;
+
+    &:hover {
+        border: 2px solid rgb(234, 232, 232);
+        border-radius: 10px;
+    }
+} 

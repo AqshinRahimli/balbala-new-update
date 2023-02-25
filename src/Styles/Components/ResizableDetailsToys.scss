@@ -1,0 +1,40 @@
+ .slick-dots-toy{
+    display: flex !important;
+    top: 85% !important;
+    right: -100% !important;
+    position: absolute !important;
+
+    li {
+        margin-left: 15px !important;    
+        width: 75px !important;
+        height: 75px !important;
+    } 
+} 
+
+@media only screen and (min-width:350px) and (max-width:576px){
+    .slick-dots-toy{
+        right: -20% !important;
+        position: relative !important;
+        margin-bottom: 10px !important;
+
+        li{
+            width: 50px !important;
+            height: 50px !important;
+            margin-left: 10px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+    .slick-dots-toy {
+        right: -20% !important;
+        position: relative !important;
+        margin-top: 10px !important;
+
+        li {
+            width: 75px !important;
+            height: 75px !important;
+            margin-left: 10px !important;
+        }
+    }
+}
