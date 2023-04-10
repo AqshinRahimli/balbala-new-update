@@ -18,7 +18,7 @@ const Header = () => {
           <div className="header-top">
             <div></div>
             <div>
-              <span>100 azn və yuxarı sifarişlərdə 30% endirim!</span>
+              <span>120 azn və yuxarı sifarişlərdə 30% endirim!</span>
             </div>
             <div>
               <ul>
