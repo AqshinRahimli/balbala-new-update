@@ -1,7 +1,7 @@
 footer {
     background-color: #f28e00;
     width: 100%;
-    display: flex;
+    display: block;
 
     .footer {
         display: flex;
@@ -25,7 +25,7 @@ footer {
                 color: #fff;
 
                 .button-menu {
-                    button {
+                    h6 {
                         font-weight: 700;
                         font-size: 20px;
                     }
@@ -75,6 +75,7 @@ footer {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+
                         &:hover {
 
                             transition: 1.2s;
@@ -90,7 +91,7 @@ footer {
 
                             span {
                                 font-size: 30px;
-                              
+
                             }
                         }
                     }
@@ -133,18 +134,16 @@ footer {
                         a {
                             margin-right: 15px;
 
-                           
+
                         }
-                        // span.social-bottom-name{
-                       
-                        // }
+
                         span {
                             margin-left: 10px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                         }
-                       
+
                     }
                 }
             }
@@ -153,26 +152,27 @@ footer {
 
     .footer-buttom {
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        height: 80px;
+
         .col-3 {
             width: 15%;
         }
 
         .author-law {
-            padding-top: 80px;
-
             p {
                 color: #f28e00;
                 font-size: 15px;
             }
         }
     }
-
 }
 
 @media only screen and (min-width:350px) and (max-width:576px) {
     footer {
+        display: block;
 
         .footer {
             display: block;
@@ -181,33 +181,29 @@ footer {
                 display: block;
 
                 .help-right {
-                    ul {
-                        display: none;
+
+                    h6 {
+                        font-size: 25px;
+                        font-weight: 800;
                     }
                 }
 
                 .help-left {
+
                     .button-menu {
                         display: inline-block;
                         position: relative;
 
-                        button {
-                            padding: 0;
-                            border: 0;
-                            cursor: pointer;
-                            outline: 0;
+
+                        h6 {
+                            font-size: 25px;
+                            font-weight: 800;
                         }
 
                         .icon-menu {
                             display: flex;
                             margin-top: -25px;
                             margin-left: 70px;
-
-                            // .icon-menu-down {}
-
-                            .icon-menu-top {
-                                display: none;
-                            }
                         }
 
                     }
@@ -217,13 +213,13 @@ footer {
                         left: 0;
                         width: 300px;
                         z-index: 2;
-                        font-size: 20px;
                         text-align: start;
 
                         ul {
                             list-style: none;
                             padding: 0;
                             margin: 0;
+
                         }
 
                         li:hover {
@@ -286,6 +282,15 @@ footer {
                 }
             }
         }
+
+        // .footer-buttom {
+        //     background-color: #fff;
+        //     height: 50px;
+
+        //     p {
+        //         font-size: 12px;
+        //     }
+        // }
     }
 }
 

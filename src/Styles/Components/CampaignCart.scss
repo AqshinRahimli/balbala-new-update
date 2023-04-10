@@ -1,7 +1,7 @@
 .campaign-carts {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     padding-top: 30px;
 
     .discount-cart {
@@ -9,7 +9,7 @@
         width: 300px;
         border-radius: 15px;
         margin: 10px;
-        padding: 10px; 
+        padding: 10px;
 
         img {
             border-top-left-radius: 15px;
@@ -45,7 +45,8 @@
         }
     }
 }
-@media only screen and (min-width:350px) and (max-width:576px){
+
+@media only screen and (min-width:350px) and (max-width:576px) {
     .campaign-carts {
         flex-wrap: wrap;
     }
@@ -53,8 +54,10 @@
 
 @media only screen and (min-width:576px) and (max-width:992px) {
     .campaign-carts {
-  flex-wrap: row wrap;
+        flex-wrap: row wrap;
 
-
+        .discount-cart {
+            width: 240px;
+        }
     }
 }

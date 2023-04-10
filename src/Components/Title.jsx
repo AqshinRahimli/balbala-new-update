@@ -15,7 +15,7 @@ import { BsArrowUp } from "react-icons/bs";
 const Title = () => {
   const [openDropdown, setOpenDropdown] = useState(false);
   const dropdownHandler = () => {
-    setOpenDropdown(previous => !previous);
+    setOpenDropdown(previous => !previous);  
   };
   const rightCompanies = ['Mağazalarımız','İş Konseptimiz','Markalarımız','İşləm rəhbəri','Şəxsi Məlumatlar','Əlaqə'];
   const rightHelp = ["Sifarişi izlə","Zəmanət şərtləri","Çatdırılma şərtləri","Ödəniş variantları","Məxfilik","Etibarlı Alış-veriş"];
@@ -36,7 +36,7 @@ const Title = () => {
   return (
     <div>
       <footer>
-        <div className="container">
+         <div className="container">
           <div className="footer">
             <div className="help">
               <div className="help-right">
@@ -47,13 +47,9 @@ const Title = () => {
               </div>
               <div className="help-left">
                 <div className="button-menu" >
-                  <button>
+                  <h6>
                     Yardım
-                  </button>
-                  <div className="icon-menu">
-                  <BsArrowUp className='icon-menu-top' />
-                  <AiOutlineArrowDown className="icon-menu-down"onClick={dropdownHandler} />
-                  </div>
+                  </h6>
                 </div> 
                 <div className="dnopdown">
                   <ul>
@@ -77,12 +73,13 @@ const Title = () => {
               </div>
             </div>
           </div>
-          <div className="footer-buttom">
+        </div> 
+        <div className="footer-buttom">
             <div className="logo col-3">
               <Link to="/">
                 <img
                   src={Logo}
-                  style={{ paddingTop: "60px", scrollPaddingBottom: "20px" }}
+                  style={{scrollPaddingBottom: "20px" }}
                   alt="logo"
                 />
               </Link>
@@ -91,7 +88,6 @@ const Title = () => {
               <p>Müəllif hüquqları qorunur.</p>
             </div>
           </div>
-        </div>
       </footer>
     </div>
   );

@@ -153,7 +153,7 @@ const Header = () => {
                 <ul>
                   <li className="catigoriesBtn">
                     <Link>
-                      Katiqoriya
+                      Katiqoriya 
                       <div className="dnopdrown-menu-catigories">
                         <div className="dnopdrown-menu-catigories-left">
                           <ul>

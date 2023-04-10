@@ -84,7 +84,7 @@ const Membership = () =>(
               </div>
             </div>
             <div className="line">
-              <span>Yada</span>
+              <span>Ya da</span>
             </div>
             <h5>Sosial Hesab İlə Giriş Edin </h5>
             <p>

@@ -39,10 +39,10 @@ const campaignCards = [{
 {
   id:6,
   img: "indirim-logosu-5-m.webp",
-  title: "Bütün Geyimlərə 30% Endirim!",
+  title: "Bütün Geyimlərə 30% Endirim!", 
   btnText: "Məhsulları Göstər"
 },
-]
+] 
 const CampaignCart = () => {
   return (
     <div>

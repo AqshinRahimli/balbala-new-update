@@ -21,7 +21,7 @@ export const Cart = (props) => {
         <div className="image">
           <img src={require(`../Image/${imageSrc}`)} alt="" />
         </div>
-        <div className="description">
+        <div className="description"> 
           <h5>
             <span>{title}</span> 
             {description} 
