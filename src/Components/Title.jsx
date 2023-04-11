@@ -53,7 +53,7 @@ const Title = () => {
                 </div> 
                 <div className="dnopdown">
                   <ul>
-                  {rightHelp.map((info)=><li><a href="#">{info}</a></li>)}
+                  {rightHelp.map((info,index)=><li key={index}><a href="#">{info}</a></li>)}
                   </ul>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const Title = () => {
               <div className="social-button">
                 <h5>Mobil tətbiq</h5>
                 <ul>
-                  {socialBottom.map((item,index)=><li><a href="#"><span>{res[item.id]()}{item.text}</span></a></li>)}
+                  {socialBottom.map((item,index)=><li key={index}><a href="#"><span>{res[item.id]()}{item.text}</span></a></li>)}
                 </ul>
               </div>
             </div>
